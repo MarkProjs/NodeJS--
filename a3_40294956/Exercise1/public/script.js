@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       // Fetch the result for summation
       const res = await fetch(`/findSummation?num=${num}`);
-      const data = await res.json(); // Use .json() instead of .text() here
-      console.log("Data:", data); // Log it
+      const data = await res.json();
       document.getElementById("sumResult").textContent = `Result: ${data.result}`;
     } catch (err) {
       console.error("Error:", err);
