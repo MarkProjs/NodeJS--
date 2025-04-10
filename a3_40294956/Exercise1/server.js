@@ -7,7 +7,7 @@ const path = require('path');
 app.use(cors());
 
 // Serve static files from the 'a3_40294956/Exercise 1' directory (change the path if necessary)
-app.use(express.static(path.join(__dirname, 'a3_40294956')));
+app.use(express.static('public'));
 
 // Parse incoming form data
 app.use(express.urlencoded({ extended: false }));
@@ -97,6 +97,6 @@ app.get("/find4Digits", (req, res) => {
 });
 
 // Start server on port 3000
-app.listen(5500, () => {
-  console.log("Server running on http://127.0.0.1:5500");
+app.listen(3000, () => {
+  console.log("Server running on http://127.0.0.1:3000");
 });
