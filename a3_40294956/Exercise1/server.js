@@ -6,7 +6,6 @@ const path = require('path');
 // Enable CORS for all routes (optional, useful for testing with different ports)
 app.use(cors());
 
-// Serve static files from the 'a3_40294956/Exercise 1' directory (change the path if necessary)
 app.use(express.static('public'));
 
 // Parse incoming form data
